@@ -1,0 +1,71 @@
+:root {
+    font-family: 'Lucida Console', monospace;
+}
+
+body {
+    background-color: HoneyDew;
+    text-align: center;
+}
+
+header, footer {
+    padding: 20px;
+}
+
+#lewy, #prawy {
+    background-color: PaleGreen;
+    width: 20%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 40px;
+    height: fit-content;
+}
+
+#prawy {
+    display: none;
+}
+
+#srodkowy {
+    width: 60%;
+    box-shadow: 0 0 10px DarkGreen;
+}
+
+
+
+img {
+    width: 80%;
+    margin: 10px;
+    cursor: pointer;
+}
+
+table {
+    width: 90%;
+    margin: 10px;
+    border-collapse: collapse;
+}
+
+td {
+    border: 3px solid SeaGreen;
+}
+
+main {
+    display: flex;
+    /* display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "lewy srodkowy prawy"
+    ". srodkowy ."
+    ". srodkowy .";
+    #lewy {
+        grid-area: lewy
+    }
+    #srodkowy {
+        grid-area: srodkowy;
+    }
+
+    #prawy {
+        grid-area: prawy;
+    } */
+}
