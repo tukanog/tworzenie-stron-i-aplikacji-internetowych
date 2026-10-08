@@ -1,5 +1,0 @@
-wordpress
-blog
-> czytanie
-strona statyczna
-coś tam ze domyslna strona na blog z wpisami i wybrać strone

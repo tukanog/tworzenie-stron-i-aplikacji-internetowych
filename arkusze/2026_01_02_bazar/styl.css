@@ -1,4 +1,4 @@
-* {
+:root {
     font-family: Georgia, serif;
 }
 
@@ -10,29 +10,21 @@ header, footer {
 }
 
 nav {
-    background-color: darkkhaki;
+    background-color: DarkKhaki;
     height: 150px;
     overflow: hidden;
 }
 
 aside, section {
-    background-color: khaki;
+    background-color: Khaki;
     width: 50%;
     height: 400px;
-}
-
-aside {
-    float: left;
-}
-
-section {
-    float: right;
 }
 
 aside > img {
     padding: 2px;
     margin: 10px;
-    border: dotted 2px forestgreen;
+    border: 2px dotted ForestGreen;
     border-radius: 40px;
 }
 
@@ -41,6 +33,6 @@ p {
     font-style: italic;
 }
 
-footer {
-    clear: both;
+div {
+    display: flex;
 }
