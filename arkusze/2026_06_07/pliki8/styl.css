@@ -13,7 +13,7 @@ header, footer {
 
 #lewy, #prawy {
     background-color: PaleGreen;
-    width: 20%;
+    /* width: 20%; */
     padding-top: 80px;
     padding-bottom: 80px;
     padding-left: 0;
@@ -27,7 +27,7 @@ header, footer {
 }
 
 #srodkowy {
-    width: 60%;
+    /* width: 60%; */
     box-shadow: 0 0 10px DarkGreen;
 }
 
@@ -50,22 +50,18 @@ td {
 }
 
 main {
-    display: flex;
-    /* display: grid;
+    /* display: flex; */
+    display: grid;
     grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
-    "lewy srodkowy prawy"
-    ". srodkowy ."
-    ". srodkowy .";
+    "lewy srodkowy prawy";
     #lewy {
         grid-area: lewy
     }
     #srodkowy {
         grid-area: srodkowy;
     }
-
     #prawy {
         grid-area: prawy;
-    } */
+    }
 }
