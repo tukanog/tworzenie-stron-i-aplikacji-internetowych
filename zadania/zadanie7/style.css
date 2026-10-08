@@ -1,0 +1,29 @@
+body {
+    background-color: cadetblue;
+    display: grid;
+    grid-template-columns: auto 600px auto;
+    font-size: 18px;
+    font-family: Tahoma;
+    > * {
+        border: 1px solid black;
+        padding: 0.5em;
+        margin-bottom: 0.5em;
+        grid-column-start: 2;
+    }
+}
+
+.serif {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: silver;
+}
+
+.sans-serif {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(270, 50%, 70%);
+}
+
+.monospace {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: yellowgreen
+}

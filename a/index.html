@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pola formularza</title>
+</head>
+<body>
+    <h1>Pola formularza</h1>
+
+    <h2>Typy pól</h2>
+    <div>
+        <h3>Pole tekstowe</h3>
+        <input type="text" id="tekstowy" maxlength="10" minlength="3" placeholder="Wpisz tekst">
+    </div>
+    <div>
+        <h3>Duże pole tekstowe</h3>
+        Zgłoszenie: <textarea id="zgloszenie" cols="80" rows="4" style="resize: none" minlength="30" maxlength="320"></textarea>
+    </div>
+    <div>
+        <h3>Pole e-mail:</h3>
+        <input type="email" id="email" maxlength="20" minlength="9" placeholder="Podaj adres">
+    </div>
+    <div>
+        <h3>Pole nr telefonu:</h3>
+        Numer telefonu: <input type="tel" id="telefon" placeholder="Wpisz numer telefonu">
+    </div>
+    <div>
+        <h3>Pole adresu url:</h3>
+        Adres strony: <input type="url" id="url" placeholder="Wpisz adres strony">
+    </div>
+    <div>
+        <h3>Pole hasła:</h3>
+        Hasło: <input type="password" id="haslo" placeholder="Wpisz hasło">
+    </div>
+    <div>
+        <h3>Pole liczbowe</h3>
+        <input type="number" id="number" min="-5" max="5" step="0.1">
+    </div>
+    <div>
+        <h3>Data i czas</h3>
+        Data: <input type="date" id="data" min="2007-01-01" max="2008-12-31" value="2008-11-15"><br>
+        Czas: <input type="time" id="time" min="08:00" max="16:00" value="08:00"><br>
+        Data i czas: <input type="datetime-local" id="datetime" min="1980-01-01 08:00" max="1990-12-31 16:00" value="1986-04-24 08:00">
+    </div>
+    <div>
+        <h3>Pole ukryte</h3>
+        Tu jest pole (serio, serio): <input type="hidden" id="ninja" value="jestem ninja">
+    </div>
+    <div>
+        <h3>Pola wielokrotnego wyboru</h3>
+        Wybór 1: <input type="checkbox" id="wybor1" class="wybor" value="1"><br>
+        Wybór 2: <input type="checkbox" id="wybor2" class="wybor" value="2" checked>
+    </div>
+    <div>
+        <h3>Pola jednokrotnego wyboru</h3>
+        Opcja 1: <input type="radio" name="opcja" id="opcja1" class="opcja" value="x"><br>
+        Opcja 2: <input type="radio" name="opcja" id="opcja2" class="opcja" value="y" checked><br>
+        Opcja 3: <input type="radio" name="opcja" id="opcja3" class="opcja" value="z">
+    </div>
+    <div>
+        <h3>Lista rozwijana</h3>
+        Zwierzątko: 
+        <select id="lista">
+            <option value="" selected>--wybierz--</option>
+            <option value="kot">kot</option>
+            <option value="pies">pies</option>
+            <option value="welocyraptor">welocyraptor</option>
+        </select><br>
+        Wersja: 
+        <select id="lista">
+            <option value="lite">lite</option>
+            <option value="normal" selected>normal</option>
+            <option value="premium">premium</option>
+        </select>
+    </div>
+    <div>
+        <h3>Zakres</h3>
+        Jasność: <input type="range" id="zakres" min="0" max="100" step="1" value="50">%
+    </div>
+    <div>
+        <h3>Wybór koloru</h3>
+        Wybierz kolor: <input type="color" id="kolor" value="#663399">
+    </div>
+</body>
+</html>

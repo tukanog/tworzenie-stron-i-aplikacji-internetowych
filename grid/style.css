@@ -1,0 +1,21 @@
+body {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 150px 550px 50px;
+    grid-template-areas: 
+    "lewy header ."
+    "lewy main prawy"
+    "footer footer prawy";
+
+    header { grid-area: header; }
+    #lewy { grid-area: lewy; }
+    main { 
+        grid-area: main; 
+        background-color: greenyellow;
+    }
+    #prawy { grid-area: prawy; }
+    footer { grid-area: footer; }
+
+    header, footer { background-color: blue; }
+    #lewy, #prawy { background-color: darkgreen; }
+}

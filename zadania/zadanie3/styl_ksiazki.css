@@ -1,0 +1,47 @@
+body {
+    background-color: #e69292;
+    color: #fff;
+    font-family: Tahoma;
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+header {
+    height: 110px;
+    padding: 5px;
+    text-align: center;
+    background-color: #cc5151;
+    width: 100%;
+}
+
+aside {
+    background-color: #8d5252;
+    text-align: center;
+    width: 40%;
+    height: 600px;
+}
+
+main {
+    background-color: #d97f7f;
+    width: 60%;
+    height: 600px;
+}
+
+footer {
+    text-align: center;
+    background-color: #cc5151;
+    padding: 10px;
+    width: 100%;
+}
+
+img {
+    width: 60%;
+}
+
+h1, h2 {
+    text-decoration: underline;
+}
+
+q {
+    font-style: italic;
+}

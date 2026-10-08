@@ -1,0 +1,3 @@
+position:
+static - domyślny, nie działa trblz (top, right, bottom, left, z-index)
+relative - działa trblz, ale nadaj zajmuje domyślne miejsce

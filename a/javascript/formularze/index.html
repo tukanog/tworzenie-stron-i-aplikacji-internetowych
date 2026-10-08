@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularze</title>
+    <script defer src="script.js"></script>
+    <style>
+        .sport:checked {
+            accent-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formularze</h1>
+    <h2>Zapis na wycieczkę</h2>
+    <form id="wycieczka">
+        <p>
+            <label>
+                Nazwisko: <input type="text" id="nazwisko" required>
+            </label>
+        </p>
+        <p>
+            <label>
+                Imię: <input type="text" id="imie" required>
+            </label>
+        </p>
+        <p>
+            <label>
+                Klasa:
+                <select id="klasa" required>
+                    <option value="">--wybierz--</option>
+                    <option value="4ti1">4ti1</option>
+                    <option value="4ti2">4ti2</option>
+                    <option value="4tc">4tc</option>
+                    <option value="4tr">4tr</option>
+                </select>
+            </label>
+        </p>
+        <p>
+            <button>Zapisz</button>
+            <button type="reset">Wyczyść</button>
+        </p>
+        <p id="komunikat1"></p>
+    </form>
+    
+    <h2>Newsletter</h2>
+    <form id="newsletter">
+        <p>
+            <label>
+                E-mail: <input type="email" id="email" required>
+            </label>
+        </p>
+        <p>
+            <label>
+                Zgoda na newsletter <input type="checkbox" id="zgoda" value="zgoda" required>
+            </label>
+        </p>
+        <button type="submit">Zapisz</button> <!-- albo pomiń type -->
+        <p id="komunikat2"></p>
+    </form>
+
+    <h2>Sporty</h2>
+    <h3>Wybierz sporty, które uprawiasz:</h3>
+    <form id="ankieta">
+        <p>
+            <label>
+                <input type="checkbox" id="id1" class="sport" value="piłka nożna"> piłka nożna
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" id="id2" class="sport" value="siatkówka"> siatkówka
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" id="id3" class="sport" value="koszykówka"> koszykówka
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" id="id4" class="sport" value="e-sport"> e-sport
+            </label>
+        </p>
+        <button>Zapisz</button>
+        <p id="komunikat3"></p>
+    </form>
+
+    <h2>Pola wyboru pojedynczego</h2>
+    <h3>Wskaż województwo, w którym mieszkasz</h3>
+    <form id="wojewodztwa">
+        <p>
+            <label>
+                <input type="radio" name="wojewodztwo" class="wojewodztwo" value="łódzkie" required> łódzkie
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="wojewodztwo" class="wojewodztwo" value="mazowieckie"> mazowieckie
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="wojewodztwo" class="wojewodztwo" value="małopolskie"> małopolskie
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="wojewodztwo" class="wojewodztwo" value="lubelskie"> lubelskie
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="wojewodztwo" class="wojewodztwo" value="lubuskie"> lubuskie
+            </label>
+        </p>
+        <button>Zapisz</button>
+        <p id="komunikat4"></p>
+    </form>
+</body>
+</html>

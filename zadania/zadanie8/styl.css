@@ -1,0 +1,101 @@
+:root {
+    font-family: Garamond;
+}
+
+body {
+    /* display: flex;
+    flex-wrap: wrap; */
+    
+    /* display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "header aside"
+        "main aside"
+        "footer footer";
+    > header {
+        grid-area: header;
+    }
+    > aside {
+        grid-area: aside;
+    }
+    > footer {
+        grid-area: footer
+    }
+    > main {
+        grid-area: main
+    }  */
+}
+header {
+    background-color: tomato;
+    color: white;
+    text-align: center;
+    width: 80%;
+    height: 80%;
+    float: left;
+}
+
+main {
+    width: 80%;
+    height: 80%;
+    float: left;
+}
+
+aside {
+    background-color: Coral;
+    width: 20%;
+    height: 680px;
+    float: right;
+}
+
+footer {
+    background-color: tomato;
+    color: white;
+    text-align: center;
+    clear: both;
+}
+
+img {
+    border-radius: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#chat {
+    border: 1px solid tomato;
+    margin: 15px;
+    height: 470px;
+    overflow: scroll;
+}
+
+.msgjolanta, .msgkrzysiek {
+    border-radius: 5px;
+    width: 90%;
+    height: 70px;
+    margin: 2%;
+    padding: 3px;
+}
+
+.msgjolanta {
+    background-color: #EEE;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.msgkrzysiek {
+    background-color: #CCC;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+button {
+    background-color: tomato;
+    border: solid 1px DarkRed;
+    padding: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 500px;
+}

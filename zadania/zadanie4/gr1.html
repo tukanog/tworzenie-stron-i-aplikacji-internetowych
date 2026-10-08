@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie: Formularze i funkcje</title>
+    <script defer src="gr1.js"></script>
+</head>
+<body>
+    <h1>Zadanie: Formularze i funkcje - grupa 1</h1>
+
+    <h2>Kantor</h2>
+    <form id="kantor">
+        <p>
+            <label>
+                Kwota do zamiany:
+                <input type="number" id="pln" min="1" step="0.01" required>PLN
+            </label>
+        </p>
+        <p>
+            <label>
+                Kwota docelowa:
+                <select id="waluta">
+                    <option value="eur">EUR</option>
+                    <option value="gbp">GBP</option>
+                    <option value="usd">USD</option>
+                </select>
+            </label>
+        </p>
+        <button>Wymień</button>
+        <p id="wynikKantor"></p>
+    </form>
+
+    <h2>Zamówienie</h2>
+    <form id="calkowitykoszt">
+        <p>
+            <label>
+                Cena: <input type="number" id="cena" step="0.01" min="0.01" required> zł
+            </label>
+        </p>
+        <p>
+            <label>
+                Waga produktu: <input type="number" id="waga" step="0.01" min="0.01" required> kg
+            </label>
+        </p>
+        <p>
+            <label>
+                Rabat:
+                <select id="rabat">
+                    <option value="0">0%</option>
+                    <option value="0.1">10%</option>
+                    <option value="0.2">20%</option>
+                </select>
+            </label>
+        </p>
+        <button>Oblicz</button>
+        <p id="wynikcalkowitykoszt"></p>
+    </form>
+
+    <h2>BMI</h2>
+    <form id="BMI">
+        <p>
+            <label>
+                Wzrost: <input type="number" id="wzrost" min="1" required> cm
+            </label>
+        </p>
+        <p>
+            <label>
+                Waga: <input type="number" step="0.01" id="wagaBMI" min="1" required> kg
+            </label>
+        </p>
+        <button>Oblicz</button>
+        <p id="wynikBMI"></p>
+    </form>
+</body>
+</html>

@@ -19,15 +19,12 @@
             $id_aktora = $_POST['id_aktora'];
             $id_filmu = $_POST['id_filmu'];
             
-            $kwerenda = "INSERT INTO `filmy_aktorzy` (`id_aktora`, `id_filmu`) VALUES ('$id_aktora', '$id_filmu')";
+            $kwerenda = "INSERT INTO `filmy_aktorzy` (`id_aktora`, `id_filmu`) VALUES ('$id_aktora', '$id_filmu')"; // z cudzysłowiem możemy używać zmiennych PHP bez konkatenacji, ale takto w kwerendzie trzeba używać apostrofów
             $db->query($kwerenda);
         }
 
         if ($db->affected_rows === 1) {
             echo '<p>Dodano aktora do filmu!</p>';
-        }
-        else {
-            echo '<p>Ten aktor należy już do tego filmu!</p>'
         }
 
     ?>
