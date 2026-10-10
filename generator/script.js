@@ -15,6 +15,8 @@ BTN.addEventListener('click', function() {
         P.style.fontFamily = 'Courier New'
         P.title = 'Tu pojawi się liczba'
         document.querySelector('div').appendChild(P)
+        let num = Math.floor( Math.random() * 10 )
+        P.innerHTML += num
     }
 })
 
