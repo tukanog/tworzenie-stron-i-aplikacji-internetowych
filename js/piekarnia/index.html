@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piekarnia</title>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Piekarnia Habadzibadło</h1>
+    <h2>Wypiekanie</h2>
+    <form id="piec">
+        <label>
+            Rodzaj:
+            <select id="rodzaj" required>
+                <option label="--wybierz--" disabled hidden selected></option>
+                <option value="bułka">bułka</option>
+                <option value="chleb">chleb</option>
+                <option value="rogalik">rogalik</option>
+                <option value="pączek">pączek</option>
+            </select>
+        </label>
+        <label>
+            Cena: <input type="number" id="cena" min="1" step="0.01" required>
+        </label>
+        <label>
+            Dodatkowe informacje: <input type="text" id="informacje">
+        </label>
+        <button>Wypiecz</button>
+    </form>
+
+
+    <h2>Sklep</h2>
+    <div id="lada"></div>
+
+    <p id="kasa">0</p>
+</body>
+</html>

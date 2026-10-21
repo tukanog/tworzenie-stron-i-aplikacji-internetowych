@@ -4,9 +4,13 @@ const SPAN = document.querySelector('span')
 BTN.addEventListener('click', function() {
     const AKAPIT = document.querySelector('p')
 
-    if(AKAPIT) {
+    function dodajLiczbe(element) {
         let num = Math.floor( Math.random() * 10 )
-        AKAPIT.innerHTML += num
+        element.innerHTML += num
+    }
+
+    if(AKAPIT) {
+        dodajLiczbe(AKAPIT)
     } else {
         const P = document.createElement('p')
         P.style.backgroundColor = '#ccc'
@@ -15,8 +19,7 @@ BTN.addEventListener('click', function() {
         P.style.fontFamily = 'Courier New'
         P.title = 'Tu pojawi się liczba'
         document.querySelector('div').appendChild(P)
-        let num = Math.floor( Math.random() * 10 )
-        P.innerHTML += num
+        dodajLiczbe(P)
     }
 })
 
