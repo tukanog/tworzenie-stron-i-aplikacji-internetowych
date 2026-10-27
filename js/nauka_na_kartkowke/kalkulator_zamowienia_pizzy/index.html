@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator pizzy</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Zamów pizzę</h1>
+
+    <form id="formularz">
+        <label for="rozmiar">Rozmiar pizzy:</label>
+        <select id="rozmiar">
+            <option value="20">Mała - 20 zł</option>
+            <option value="30" selected>Średnia - 30 zł</option>
+            <option value="40">Duża - 40 zł</option>
+        </select>
+
+        <h2>Wybierz dodatki</h2>
+
+        <label>
+            <input type="checkbox" class="dodatek"
+                   value="4">
+            Dodatkowy ser (+4 zł)
+        </label>
+
+        <label>
+            <input type="checkbox" class="dodatek"
+                   value="3">
+            Pieczarki (+3 zł)
+        </label>
+
+        <label>
+            <input type="checkbox" class="dodatek"
+                   value="5">
+            Szynka (+5 zł)
+        </label>
+
+        <label>
+            <input type="checkbox" class="dodatek"
+                   value="4">
+            Oliwki (+4 zł)
+        </label>
+
+        <p>
+            <button type="submit">Oblicz cenę</button>
+            <button type="reset" id="reset">Resetuj</button>
+        </p>
+    </form>
+
+    <h2>Podsumowanie zamówienia</h2>
+
+    <p id="cena-pizzy"></p>
+    <p id="liczba-dodatkow"></p>
+    <p id="cena-dodatkow"></p>
+    <p id="razem"></p>
+</body>
+</html>
