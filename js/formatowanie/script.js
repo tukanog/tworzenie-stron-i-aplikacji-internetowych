@@ -27,7 +27,7 @@ BIU.forEach((el) => {
 function stylujText() {
     BIU.forEach((el) => {
         if(el.checked) {
-            console.log(el.value)
+            TEXT.style = el.value
         }
     })
 }

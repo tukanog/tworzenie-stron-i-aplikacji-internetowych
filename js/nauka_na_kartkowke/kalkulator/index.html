@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator zamówienia</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Kalkulator zamówienia</h1>
+
+    <form id="formularz">
+        <p>
+            <label for="cena">Cena produktu (zł):</label>
+            <input type="number" id="cena" step="0.01">
+        </p>
+
+        <p>
+            <label for="ilosc">Ilość sztuk:</label>
+            <input type="number" id="ilosc" step="1">
+        </p>
+
+        <p>
+            <label for="kod">Kod rabatowy:</label>
+            <input type="text" id="kod">
+        </p>
+
+        <button type="submit">Oblicz cenę</button>
+    </form>
+
+    <h2>Podsumowanie zamówienia</h2>
+
+    <p id="wartosc"></p>
+    <p id="rabat"></p>
+    <p id="dostawa"></p>
+    <p id="wynik"></p>
+</body>
+</html>

@@ -1,7 +1,7 @@
 const BTN = document.querySelector('button')
 const SPAN = document.querySelector('span')
 
-BTN.addEventListener('click', function() {
+BTN.addEventListener('click', function() { // można też oczywiście onclick = function()...
     const AKAPIT = document.querySelector('p')
 
     function dodajLiczbe(element) {

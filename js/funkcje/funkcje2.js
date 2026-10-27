@@ -17,4 +17,4 @@ function BMI(waga, wzrost) {
     BMI = waga / wzrost ** 2
     return BMI
 }
-console.log(BMI(0, 1.92))
+console.log(BMI(1, 1.92))
