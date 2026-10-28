@@ -12,7 +12,7 @@ setInterval(function() {
     DATA.textContent = aktualnaData.toLocaleString()
 }, 500)
 
-document.body.onload = function() {
+// document.body.onload = function() { niepotrzebne xd
     let storage = localStorage.getItem('zadania')
 
     if(storage) {
@@ -21,7 +21,7 @@ document.body.onload = function() {
             stworzZadanie(el)
         })
     }
-}
+// }
 
 TODO.onsubmit = function(e) {
     e.preventDefault()
