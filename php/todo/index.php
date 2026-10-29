@@ -41,7 +41,7 @@
         
         <!-- Miejsce na ewentualny komunikat o błędzie z PHP -->
         <p style="color: red;">
-            <?php if(isset($komunikat)) { echo $komunikat; }?>
+            <?php if(isset($komunikat)) { echo $komunikat; }; ?>
         </p>
 
         <form action="index.php" method="POST">
