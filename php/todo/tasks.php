@@ -4,6 +4,8 @@
     if(empty($_SESSION)) {
         header('Location: index.php');
     }
+
+    $fullname = $_SESSION['fullname'];
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +21,7 @@
     <div class="container todo-container">
         <div class="header-user">
             <!-- Tutaj w PHP wyrenderujesz np. $_SESSION['username'] -->
-            <span>Zalogowany jako: <strong>Jan Kowalski</strong></span>
+            <span>Zalogowany jako: <strong><?= $fullname ?></strong></span>
             <a href="logout.php" class="logout-btn">Wyloguj się</a>
         </div>
 
