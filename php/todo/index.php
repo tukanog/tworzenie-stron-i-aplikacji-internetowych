@@ -14,10 +14,10 @@
 
         if ($user->num_rows == 1) {
             $user = $user->fetch_assoc();
-            $_SESSION['id'] = $user['id'];
+            $_SESSION['id'] = $user['id']; // $_SESSION to tablica globalna do sesji
             $_SESSION['username'] = $user['username'];
             $_SESSION['fullname'] = $user['fullname'];
-            header('Location: tasks.php');
+            header('Location: tasks.php'); // wysyła do innej strony
         } else { $komunikat = 'Niepoprawne dane'; }
     }
 
@@ -39,7 +39,7 @@
     <div class="container">
         <h2>Zaloguj się</h2>
         
-        <!-- Miejsce na ewentualny komunikat o błędzie z PHP -->
+        <!-- Miejsce na ewentualny komunikat o błędziheader('Location: tasks.php');e z PHP -->
         <p style="color: red;">
             <?php if(isset($komunikat)) { echo $komunikat; }; ?>
         </p>
